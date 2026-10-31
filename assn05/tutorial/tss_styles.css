@@ -61,10 +61,9 @@ aside blockquote {
 }
 
 /* Navigation Styles */	
-
-
-
-
+nav {
+   font-size: 0.8em;
+}
 
 /* List Styles */
 
