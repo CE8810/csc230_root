@@ -39,7 +39,7 @@ body > footer address {
 h1 {
    font-weight: normal;
    font-family: Nobile, Verdana, Geneva, sans-serif;
-   font-kerning: 0.2em;
+   letter-spacing: 0.2em;
    margin: 0px;
 }
 section#tss_coaches h1 {
@@ -58,8 +58,8 @@ article.coach_bio h2 {
 aside blockquote {
    font-size: 0.95em;
    font-family: 'Comic Sans MS', cursive;
-   color: rgb(222, 128, 60);
-   background-color: rgba(255, 255, 255, 0.75);
+   color: rgb(255, 255, 255); /* the instructions had these colors backwards compared to Figure 2-58 */
+   background-color: rgba(222, 128, 60, 0.75); /* the instructions had these colors backwards compared to Figure 2-58 */
    padding: 10px;
    quotes: "\201C" "\201D";
 }
@@ -70,7 +70,7 @@ aside blockquote::before {
    font-weight: bold;
 }
 aside blockquote::after {
-   content: open-quote;
+   content: close-quote; /* the instructions said open-quote, however Figure 2-58 shows close-quote */
    font-family: 'Times New Roman', Times, serif;
    font-size: 1.6em;
    font-weight: bold;
