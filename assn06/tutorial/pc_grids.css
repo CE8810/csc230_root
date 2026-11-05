@@ -19,3 +19,6 @@ body {
 }
 
 /* Grid Styles for Nested Grid */
+section {
+   display: grid;
+}
