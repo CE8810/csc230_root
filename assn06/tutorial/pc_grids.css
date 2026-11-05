@@ -22,4 +22,5 @@ body {
 /* Grid Styles for Nested Grid */
 section {
    display: grid;
+   grid-template-columns: repeat(2, 1fr);
 }
