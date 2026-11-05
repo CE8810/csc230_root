@@ -35,6 +35,9 @@ body > aside {
 body > section {
    grid-area: articles;
 }
+body > footer {
+   grid-area: footer;
+}
 
 /* Grid Styles for Nested Grid */
 section {
