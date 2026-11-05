@@ -32,6 +32,9 @@ body > article {
 body > aside {
    grid-area: faq;
 }
+body > section {
+   grid-area: articles;
+}
 
 /* Grid Styles for Nested Grid */
 section {
