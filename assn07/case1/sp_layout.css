@@ -30,11 +30,10 @@ img {
 }
 
 /* CSS Grid Styles */
-
-
-
-
-
+body {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 /* Horizontal Navigation List Styles */
 
@@ -47,3 +46,8 @@ img {
 
 /* Customer Comment Styles */
 
+
+/* TODO temporary code to view grid */
+body > * {
+   outline: 2pt dashed red;
+}
