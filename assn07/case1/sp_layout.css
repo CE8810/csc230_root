@@ -63,7 +63,10 @@ section > p {
 }
 
 /* Customer Comment Styles */
-
+aside {
+   width: 75%;
+   padding-bottom: 30px;
+}
 
 /* TODO temporary code to view grid */
 body > * {
