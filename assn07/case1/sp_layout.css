@@ -34,11 +34,11 @@ body {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-img#logo {
+#logo {
    grid-column: span 3;
    width: 100%;
 }
-nav.horizontal, footer {
+.horizontal, footer {
    grid-column: span 4;
 }
 aside {
@@ -46,8 +46,11 @@ aside {
 }
 
 /* Horizontal Navigation List Styles */
-
-
+.horizontal > ul > li {
+   display: block;
+   width: 12.5%;
+   float: left;
+}
 
 /* Section Styles */
 
