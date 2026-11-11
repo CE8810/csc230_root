@@ -70,6 +70,10 @@ aside {
 aside:nth-of-type(odd) {
    justify-self: right;
 }
+aside > img {
+   float: left;
+   width: 20%;
+}
 
 /* TODO temporary code to view grid */
 body > * {
