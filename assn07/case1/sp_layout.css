@@ -74,8 +74,8 @@ aside > img {
    float: left;
    width: 20%;
 }
-
-/* TODO temporary code to view grid */
-body > * {
-   outline: 2pt dashed red;
+aside > p {
+   float: left;
+   width: 75%;
+   margin-left: 5%;
 }
