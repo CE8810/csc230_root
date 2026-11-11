@@ -34,6 +34,10 @@ body {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+img#logo {
+   grid-column: 1/span 3;
+   width: 100%;
+}
 
 /* Horizontal Navigation List Styles */
 
