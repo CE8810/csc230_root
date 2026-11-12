@@ -80,8 +80,9 @@ aside {
    left: 544px;
 }
 
-
 /* Map Information Styles */
-
+.mapInfo {
+   display: none;
+}
 
 
