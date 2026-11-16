@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <!--
     4Q-CSC230-X01-01-Website Design-Fall 2026
@@ -13,57 +11,83 @@
     Filename: index.html
     -->
     <meta charset="utf-8" />
-    <title>My personal web page for class CSC230-Web Design</title>
+    <title>CSC230-Web Design - Chris Elkins</title>
+    <link href="index_reset.css" rel="stylesheet" />
+    <link href="index_styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <h1>Christopher "Chris" Elkins</h1>
         <h3>Bachelor of Science in Information Technology</h3>
-        <img src="me.jpg" alt="My Photo" />
-        <p>I will graduate in two years</p>
-        <p>Email: celkin8810@my.sullivan.edu</p>
     </header>
 
-    <nav></nav>
+    <nav>
+        <h4>My Portfolio</h4>
+        <ul class="verticalNavigation">
+            <li>
+                <a href="assn01\tutorial\ct_start.html" target="_blank" class="assignmentLink" id="assn2_2">Curbside Thai</a>
+            </li>
+            <li>
+                <a href="assn03\review\mp_index.html" target="_blank" class="assignmentLink" id="assn3_3">Mobile Panini</a>
+            </li>
+            <li>
+                <a href="assn04\case1\jtc_index.html" target="_blank" class="assignmentLink" id="assn4_2">Jedds Tree Service</a>
+            </li>
+            <li>
+                <a href="assn05\tutorial\tss_home.html" target="_blank" class="assignmentLink" id="assn5_1">Tri and Succeed Sports</a>
+            </li>
+            <li>
+                <a href="assn05\review\tss_coach.html" target="_blank" class="assignmentLink" id="assn5_2">Meet the Coaches</a>
+            </li>
+            <li>
+                <a href="midterm\case1\ph_plays.html" target="_blank" class="assignmentLink" id="assn5_3">Philip Henslowe Classic Theatre</a>
+            </li>
+            <li>
+                <a href="assn06\tutorial\pc_home.html" target="_blank" class="assignmentLink" id="assn6_1">Pandaisia Chocolates</a>
+            </li>
+            <li>
+                <a href="assn07\case1\sp_home.html" target="_blank" class="assignmentLink" id="assn7_1">Slate & Pencil</a>
+            </li>
+            <li>
+                <a href="assn07\case2\ss_dday.html" target="_blank" class="assignmentLink" id="assn7_2">A Soldier's Scrapbook</a>
+            </li>
+        </ul>
+    </nav>
 
-    <aside></aside>
-
-    <section>
-        <article>
-            <ol>
-                <li>
-                    <a href="assn01\tutorial\ct_start.html" target="_blank">Assignment 2.2 - Curbside Thai (HTML01, Tutorial 1)</a>
-                </li>
-                <li>
-                    <a href="assn03\review\mp_index.html" target="_blank">Assignment 3.3 - Mobile Panini (HTML01, Review)</a>
-                </li>
-                <li>
-                    <a href="assn04\case1\jtc_index.html" target="_blank">Assignment 4.2 - Jedds Tree Service (HTML01, Case 1)</a>
-                </li>
-                <li>
-                    <a href="assn05\tutorial\tss_home.html" target="_blank">Assignment 5.1 - Tri and Succeed Sports (HTML02, Tutorial)</a>
-                </li>
-                <li>
-                    <a href="assn05\review\tss_coach.html" target="_blank">Assignment 5.2 - (optional EXTRA CREDIT) Meet the Coaches (HTML02, Review)</a>
-                </li>
-                <li>
-                    <a href="midterm\case1\ph_plays.html" target="_blank">Assignment 5.3 - Midterm Project: Philip Henslowe Classic Theatre (HTML02, Case Problem 1)</a>
-                </li>
-                <li>
-                    <a href="assn06\tutorial\pc_home.html" target="_blank">Assignment 6.1 - Pandaisia Chocolates (HTML03, Tutorial)</a>
-                </li>
-                <li>
-                    <a href="assn07\case1\sp_home.html" target="_blank">Assignment 7.1 - Slate & Pencil (HTML03, Case 1)</a>
-                </li>
-                <li>
-                    <a href="assn07\case2\ss_dday.html" target="_blank">Assignment 7.2 - A Soldier's Scrapbook (HTML3, case 2)</a>
-                </li>
-            </ol>
-        </article>
+    <section id="aboutMe">
+        <aside>
+            <h4>About Me</h4>
+            <p>
+                I am currently taking online courses at Sullivan University in Louisville, KY to obtain a Bachelor 
+                of Science in Information Technology. I believe I would be classified as a junior now and I am on 
+                schedule to graduate in December 2028. I have an extensive background in Information Technology 
+                and already hold an Associate of Applied Science in IT. I worked in the IT field for 20 years, with 
+                17 of those years spent developing software. Most of my development experience has been working with 
+                backend code for web applications or developing standalone GUI applications. I have some experience 
+                with JavaScript and HTML from my years in the IT industry.
+            </p>
+            <p>
+                As part of my degree curriculum, I am required to take a Web Design course and have gained a much 
+                deeper understanding of HTML. This has additionally introduced me to CSS, which I am gaining a 
+                solid basis in. I love developing software and hope to incorporate and build upon this newfound 
+                knowledge to broaden my skillset, allowing me to perform both frontend design and backend 
+                development.
+            </p>
+            <div class="imageRotator">
+                <img src="me.jpg" alt="My photo as Macbeth" />
+            </div>
+        </aside>
     </section>
 
-    <footer></footer>
-</body>
+    <section>
+        <article></article>
+    </section>
 
+    <footer>
+        <section class="footerNavigation">
+            Email: <a href="mailto:celkin8810@my.sullivan.edu">celkin8810@my.sullivan.edu</a>
+        </section>
+    </footer>
+</body>
 </html>

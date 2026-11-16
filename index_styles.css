@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*
+   Stylesheet for Index
+   Author: Chris Elkins
+   Date:   11/15/2026
+   
+   Filename: index_styles.css
+
+*/
+
+/*
+   ISSUES TO RESOLVE
+   When the window resizes things get squished.
+*/
+/* TODO Temporary code for debugging */
+/*
+* {
+   border: 1pt dashed red;
+}*/
+
+/* Window and Body Styles */
+html {
+   background-color: #51625C;
+}
+body {
+   background-color: #0B161E;
+   font-family: Cambria, Georgia, 'Times New Roman', serif;
+   font-size: 1em;
+   color: #D8D2C6;
+   margin: 0 auto;
+   width: 80%;
+}
+
+/* CSS Grid Styles */
+body {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+header {
+   grid-column: span 2;
+}
+nav {
+	grid-column: 1;
+}
+aside {
+   grid-column: 2;
+}
+footer {
+   grid-column: span 2;
+}
+
+/* Header Styles */
+header {
+   padding-top: 20px;
+   padding-bottom: 40px;
+}
+h1, h3, h4 {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	color: #A6B9BE;
+}
+h1 {
+	font-size: 3em;
+   text-align: center;
+   padding-bottom: 10px;
+}
+h3 {
+	font-size: 1.5em;
+   text-align: center;
+}
+h4 {
+	font-size: 1.25em;
+   padding: 0px 20px 5px 20px;
+}
+
+/* Aside Styles */
+.imageRotator {
+   display: block;
+   text-align: center;
+   max-width: 100%;
+   padding: 10px 0px;
+}
+aside > p {
+   line-height: 1.2em;
+   padding: 0px 10px 5px 10px;
+}
+
+/* Navigation Styles */
+nav {
+   padding: 0px 10px;
+}
+.verticalNavigation {
+   padding: 0px 10px;
+   line-height: 2em;
+}
+.verticalNavigation > li > a:link, a:visited {
+	color: rgb(173, 127, 8);
+}
+.verticalNavigation > li > a:hover, a:active {
+	color: #4F6734;
+   text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+   padding: 10px 0px;
+   text-align: center;
+}
+.footerNavigation > a:link, .footerNavigation > a:visited {
+   color: #D8D2C6;
+   text-decoration: none;
+}
+.footerNavigation > a:hover, .footerNavigation > a:active {
+   color: blue;
+   text-decoration: underline;
+}
+
