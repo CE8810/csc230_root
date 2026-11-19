@@ -44,7 +44,9 @@ figure#figure3 {
 figure#figure1 {
    filter: sepia(0.8);
 }
-
+figure#figure2 {
+   filter: grayscale(1);
+}
 
 
 
