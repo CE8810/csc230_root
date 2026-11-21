@@ -9,17 +9,13 @@
 
 */
 
-/*
-   ISSUES TO RESOLVE
-   When the window resizes things get squished.
-*/
 /* TODO Temporary code for debugging */
 /*
 * {
    border: 1pt dashed red;
-}*/
-
-/* Window and Body Styles */
+}
+*/
+/* HTML and Body Styles */
 html {
    background-color: #51625C;
 }
@@ -30,31 +26,39 @@ body {
    color: #D8D2C6;
    margin: 0 auto;
    width: 80%;
+   max-width: 1000px;
+   min-width: 860px;
+   box-shadow: #0B161E 10px 0px 25px 15px,
+               #0B161E -10px 0px 25px 15px;
 }
 
 /* CSS Grid Styles */
 body {
    display: grid;
-   grid-template-columns: 1fr 2fr;
+   grid-template-columns: 1fr 0fr 2fr;
 }
 header {
-   grid-column: span 2;
+   grid-column: span 3;
 }
-nav {
+section#left {
 	grid-column: 1;
 }
-aside {
+section#center {
    grid-column: 2;
 }
+section#right {
+   grid-column: 3;
+}
 footer {
-   grid-column: span 2;
+   grid-column: span 3;
 }
 
-/* Header Styles */
+/* Header Style */
 header {
-   padding-top: 20px;
-   padding-bottom: 40px;
+   padding: 20px 0;
 }
+
+/* Heading Styles */
 h1, h3, h4 {
 	font-family: 'Trebuchet MS', sans-serif;
 	font-weight: bold;
@@ -71,27 +75,25 @@ h3 {
 }
 h4 {
 	font-size: 1.25em;
-   padding: 0px 20px 5px 20px;
+   padding: 0px 0px 5px;
 }
 
-/* Aside Styles */
-.imageRotator {
-   display: block;
-   text-align: center;
-   max-width: 100%;
-   padding: 10px 0px;
+/* Section Styles */
+section#left {
+   float: left;
+   margin: 10px 5px;
 }
-aside > p {
-   line-height: 1.2em;
-   padding: 0px 10px 5px 10px;
+section#center {
+   display: none;
+}
+section#right {
+   float: left;
+   margin: 10px 5px;
 }
 
 /* Navigation Styles */
-nav {
-   padding: 0px 10px;
-}
 .verticalNavigation {
-   padding: 0px 10px;
+   padding: 0px 0px 0px 10px;
    line-height: 2em;
 }
 .verticalNavigation > li > a:link, a:visited {
@@ -102,16 +104,31 @@ nav {
    text-decoration: underline;
 }
 
+/* Aside Styles */
+.imageRotator {
+   display: block;
+   text-align: center;
+   max-width: 100%;
+   padding: 10px 0px;
+}
+.imageRotator img {
+   border-radius: 20px;
+}
+aside p {
+   line-height: 1.2em;
+   padding: 0px 10px 5px;
+}
+
 /* Footer Styles */
 footer {
-   padding: 10px 0px;
+   padding: 0px 0px 5px;
    text-align: center;
 }
-.footerNavigation > a:link, .footerNavigation > a:visited {
+footer a:link, footer a:visited {
    color: #D8D2C6;
    text-decoration: none;
 }
-.footerNavigation > a:hover, .footerNavigation > a:active {
+footer a:hover, footer a:active {
    color: blue;
    text-decoration: underline;
 }
